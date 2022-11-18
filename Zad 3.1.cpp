@@ -1,22 +1,23 @@
 #include <iostream>
-#include <iomanip>
+#include <math.h>
 using namespace std;
 
 
 int main() {
-	float a,b;
+	double a,b;
 	cout << "Podaj 1 liczbe: "<<endl;
 	cin >> a;
 	cout << "Podaj 2 liczbe: "<<endl; 
 	cin >> b;
-	float w1,w2,w3,w4;
-	w1 = a+b;
-	w2 = a-b;
-	w3 = a*b;
-	w4 = a/b;
-	cout << cout.precision(2) << "Suma tych liczb to: "  << w1 << endl;
-	cout << cout.precision(2) << "Roznica tych liczb to: "  << w2 << endl;
-	cout << cout.precision(2) << "Iloczyn tych liczb to: "  << w3 << endl;
-	cout << cout.precision(2) << "Iloraz tych liczb to: "  << w4 << endl;
+	double w1,w2,w3,w4;
+	w1 = a + b;
+	w2 = a - b;
+	w3 = a * b;
+	w4 = a / b;
+	cout.precision(3);
+	cout  << "Suma tych liczb to: "  << w1 << '\n' << endl;
+	cout  << "Roznica tych liczb to: "  << w2 << '\n' << endl;
+	cout  << "Iloczyn tych liczb to: "  << w3 << '\n' << endl;
+	cout  << "Iloraz tych liczb to: "  << w4 << '\n' << endl;
 	return 0;
 }
